@@ -1,5 +1,6 @@
 import { useContext } from "react";
-import TodosContext, { type TodoContextType } from "~/lib/home/TodosContext";
+import TodosContext from "~/lib/home/context/TodosContext";
+import { type TodoContextType } from "~/lib/home/types/TodosContextsTypes";
 
 const TodoCounter = (): JSX.Element => {
   const { todos } = useContext<TodoContextType>(TodosContext);

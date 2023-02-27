@@ -1,8 +1,9 @@
 import { useContext, useRef, useState } from "react";
-import TodosContext, {
+import TodosContext from "~/lib/home/context/TodosContext";
+import {
   type TodosProps,
   type TodoContextType,
-} from "~/lib/home/TodosContext";
+} from "~/lib/home/types/TodosContextsTypes";
 
 const TodoForm = (): JSX.Element => {
   const { todos, setTodos } = useContext<TodoContextType>(TodosContext);

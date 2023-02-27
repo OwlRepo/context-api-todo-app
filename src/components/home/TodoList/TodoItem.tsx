@@ -1,14 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { useContext } from "react";
-import TodosContext, { type TodoContextType } from "~/lib/home/TodosContext";
+import TodosContext from "~/lib/home/context/TodosContext";
+import { type TodoItemProps } from "~/lib/home/types/TodoItemProps";
+import { type TodoContextType } from "~/lib/home/types/TodosContextsTypes";
 
-interface TodoListProps {
-  id: number;
-  title: string | undefined;
-  checked: boolean;
-}
-
-const TodoItem = (props: TodoListProps): JSX.Element => {
+const TodoItem = (props: TodoItemProps): JSX.Element => {
   const { todos, setTodos } = useContext<TodoContextType>(TodosContext);
 
   const handleClick = () => {

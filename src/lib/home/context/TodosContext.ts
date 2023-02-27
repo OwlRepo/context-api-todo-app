@@ -1,15 +1,8 @@
 import { createContext } from "react";
-
-export interface TodosProps {
-  id: number;
-  title: string | undefined;
-  checked: boolean;
-}
-
-export type TodoContextType = {
-  todos: TodosProps[];
-  setTodos: (value: TodosProps[]) => void;
-};
+import {
+  type TodoContextType,
+  type TodosProps,
+} from "../types/TodosContextsTypes";
 
 const TodosContext = createContext<TodoContextType>({
   todos: [{ id: 0, title: "", checked: false }],

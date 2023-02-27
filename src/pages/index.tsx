@@ -2,7 +2,7 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import { useState } from "react";
 import { TodoList } from "~/components/home";
-import TodosContext, { type TodosProps } from "~/lib/home/TodosContext";
+import TodosContext, { type TodosProps } from "~/lib/home/context/TodosContext";
 
 const sampleData = [
   {
