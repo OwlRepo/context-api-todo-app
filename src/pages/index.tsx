@@ -2,7 +2,8 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import { useState } from "react";
 import { TodoList } from "~/components/home";
-import TodosContext, { type TodosProps } from "~/lib/home/context/TodosContext";
+import TodosContext from "~/lib/home/context/TodosContext";
+import { type TodosProps } from "~/lib/home/types/TodosContextsTypes";
 
 const sampleData = [
   {
