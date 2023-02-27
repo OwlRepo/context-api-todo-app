@@ -7,7 +7,7 @@ import { type TodoContextType } from "~/lib/home/types/TodosContextsTypes";
 const TodoItem = (props: TodoItemProps): JSX.Element => {
   const { todos, setTodos } = useContext<TodoContextType>(TodosContext);
 
-  const handleClick = () => {
+  const handleChange = () => {
     todos.filter((todo) => {
       if (todo.id === props.id) {
         todo.checked = !todo.checked;
@@ -35,7 +35,7 @@ const TodoItem = (props: TodoItemProps): JSX.Element => {
         type={"checkbox"}
         className={`checkbox-primary checkbox`}
         checked={props.checked}
-        onChange={handleClick}
+        onChange={handleChange}
       />
       <p className={`${props.checked ? "line-through" : ""}`}>{props.title}</p>
       <button className="btn-square btn" onClick={handleDelete}>

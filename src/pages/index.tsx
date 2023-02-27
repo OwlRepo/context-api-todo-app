@@ -7,17 +7,17 @@ import { type TodosProps } from "~/lib/home/types/TodosContextsTypes";
 
 const sampleData = [
   {
-    id: 0,
+    id: 1,
     title: "test 0",
     checked: false,
   },
   {
-    id: 1,
+    id: 2,
     title: "test 1",
     checked: false,
   },
   {
-    id: 2,
+    id: 3,
     title: "test 2",
     checked: false,
   },
